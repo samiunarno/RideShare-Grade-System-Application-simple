@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class rideapp {
     public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
-        rideshare rideshare = new rideshare();
+        try (Scanner scanner = new Scanner(System.in)) {
+        rideshare rs = new rideshare();
         System.out.println("Welcome to Ride Share App");
         System.out.println("--------------------------------");
         rideshare.main(args);
@@ -26,15 +26,26 @@ public class rideapp {
                 continue;
             }
 
-            double fare = rideshare.calculateFare(distance, hour);
-            System.out.println("Estimated Fare: RMB " + fare);
+            double fare = rs.calculateFare(distance, hour);
 
             System.out.println("\n Trip Summary :");
             System.out.println("Distance: " + distance + " km");
-            System.out.println("Hour: " + hour + ":00 (" + (hour < 12 ? "AM" : "PM") + ")");
-            System.out.println("Estimated Fare: RMB " + fare);
-        }
 
+            System.out.println("Hour: " + hour + ":00 (" + (rs.isDayTime(hour) ? "Day Time" : "Night Time " + (hour < 12 ? "AM" : "PM")) + ")");
+
+            System.out.println("Total Fare : RMB" + String.format("%.2f", fare));
+
+            System.out.print("\n Calculate Another Trip? (yes/no) : ");
+            String choice = scanner.next();
+
+            if(choice.equals("no")){
+                System.out.println("Thank you for using Ride Share App!");
+                break;
+            }
+    }
+    scanner.close();
+        }
+    
     }
     
 }
