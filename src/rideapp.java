@@ -15,7 +15,8 @@ public class rideapp {
             System.out.print("Enter hour of the day (0-23): ");
             int hour = scanner.nextInt();
 
-            if (distance < 0 ){
+            if (distance < 0 )
+            {
                 System.out.println("Error Values");
                 continue;
             }

@@ -26,6 +26,15 @@ public class rideshare {
         }
     }
 
+    public void processPayment(double amount, String paymentMethod){
+        System.out.println("Processing payment...");
+        System.out.println("Amount: RMB " + String.format("%.2f", amount));
+        System.out.println("Payment Method: " + paymentMethod);
+
+        switch (paymentMethod) {
+            
+    }
+
     
 
     public static void main(String[] args) {
