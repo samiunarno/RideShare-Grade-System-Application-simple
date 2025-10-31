@@ -38,9 +38,13 @@ public class rideapp {
             System.out.print("\n Calculate Another Trip? (yes/no) : ");
             String choice = scanner.next();
 
-            if(choice.equals("no")){
+            if(choice.equals("no") || choice.equals("n")){
                 System.out.println("Thank you for using Ride Share App!");
                 break;
+            }
+            else {
+                System.out.println("Invalid");
+                continue;
             }
     }
     scanner.close();
