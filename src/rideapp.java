@@ -6,7 +6,8 @@ public class rideapp {
         rideshare rs = new rideshare();
         System.out.println("Welcome to Ride Share App");
         System.out.println("--------------------------------");
-        rideshare.main(args);
+        showWelcomeMessage();
+        // rideshare.main(args);
 
         while (true) {
             System.out.println("\n--- New Trip Calculation ---");
@@ -28,11 +29,9 @@ public class rideapp {
             }
 
             double fare = rs.calculateFare(distance, hour);
+            String timeType = rs.isDayTime(hour) ? "Day Time" : "Night Time " + (hour < 12 ? "AM" : "PM");
 
-            System.out.println("\n Trip Summary :");
-            System.out.println("Distance: " + distance + " km");
-            System.out.println("Hour: " + hour + ":00 (" + (rs.isDayTime(hour) ? "Day Time" : "Night Time " + (hour < 12 ? "AM" : "PM")) + ")");
-            System.out.println("Total Fare : RMB" + String.format("%.2f", fare));
+            showTripSummary(distance , hour , timeType , fare);
             System.out.print("\n Calculate Another Trip? (yes/no) : ");
             String choice = scanner.next();
 
@@ -49,5 +48,16 @@ public class rideapp {
         }
     
     }
+
+    private static void showWelcomeMessage() {
+        System.out.println("Tip: enter distance in kilometers and hour in 24-hour format (0-23).");
+    }
     
+    private static void showTripSummary(double distance, int hour, String timeType, double fare) {
+        System.out.println("\n--- Trip Summary ---");
+        System.out.printf("Distance: %.2f km%n", distance);
+        System.out.println("Hour: " + hour);
+        System.out.println("Time: " + timeType);
+        System.out.printf("Estimated Fare: $%.2f%n", fare);
+    }
 }
