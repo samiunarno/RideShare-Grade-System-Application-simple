@@ -131,6 +131,14 @@ public class GradeSystem {
         String username = scanner.nextLine();
         System.out.println("Password");
         String password = scanner.nextLine();
+        for (User user : users){
+            if(user.login(username, password)){
+                System.out.println("Login Successfull Welcome" + user.getRole());
+                return user;
+            }
+        }
+        System.out.println("Invalid User and Password");
+        return null;
     }
 
     
