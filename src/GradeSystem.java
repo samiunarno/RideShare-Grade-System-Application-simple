@@ -160,7 +160,44 @@ public class GradeSystem {
             case 2:
             double avg = student.calculateAverage();
             System.out.println("Your Average" + String.format("%.2f", avg));
+            System.out.println("Letter Grade : " + convertToLetterGrade(avg));
+            break;
 
+            case 3 :
+            displayGradeWithLetters(student);
+            break;
+
+            case 4 :
+            gradeConversionChecker();
+            break;
+
+            case 5 :
+            System.out.println("Logging Out.. ");
+            return;
+        
+            default:
+            System.out.println("Invalid Choice Please Try Again");
+        }
+    }
+    public void teacherMenu(Teacher teacher){
+        System.out.println("\n Teacher Dashboard");
+        System.out.println("1. View All Students Grades");
+        System.out.println("2. Add Grade to Student");
+        System.out.println("3. Grade Conversion Rules");
+        System.out.println("4. Grade Conversion Checker");
+        System.out.println("5. Logout");
+        System.out.println("Choose an Option : ");
+
+        int choice = scanner.nextInt();
+        scanner.nextLine();
+
+        switch (choice) {
+            case 1:
+            if(!students.isEmpty()){
+                students.get(0).ViewGrades();
+                System.out.println("\n Letter Grade Reference :");
+                showGradeConversionRules();
+            }
                 
                 break;
         
