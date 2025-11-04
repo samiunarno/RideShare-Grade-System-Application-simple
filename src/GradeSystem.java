@@ -237,7 +237,7 @@ public class GradeSystem {
     }
     
     System.out.println("Select Student By Number: ");
-    int studentChoice = scanner.nextInt();  
+    int studentChoice = scanner.nextInt();
     scanner.nextLine(); 
     
     if (studentChoice < 1 || studentChoice > students.size()) {
