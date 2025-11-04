@@ -141,6 +141,34 @@ public class GradeSystem {
         return null;
     }
 
+    public void studentMenu(Student student){
+        System.out.println("\n Student Dashboard");
+        System.out.println("1. View My Grades");
+        System.out.println("2. Calculate Average Grades");
+        System.out.println("3. View Grades with letter Conversion");
+        System.out.println("Grade Conversion Checker");
+        System.out.println("5. Logout");
+        System.out.println("Choose an Option :");
+
+        int choice = scanner.nextInt();
+        scanner.nextLine();
+
+        switch (choice) {
+            case 1:
+            student.ViewGrades();
+            break;
+            case 2:
+            double avg = student.calculateAverage();
+            System.out.println("Your Average" + String.format("%.2f", avg));
+
+                
+                break;
+        
+            default:
+                break;
+        }
+    }
+
     
     
 }
