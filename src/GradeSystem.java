@@ -46,9 +46,24 @@ public class GradeSystem {
         s1.addGrade("Object Oriented Programming Language",90.0);
         s1.addGrade("Introduction to Chineese",90.0);
         students.add(s4);
+
+        Teacher t1 = new Teacher("T001", "Wu Xiulan");
+        t1.addSubject("Advance Mathmatics");
+        teachers.add(t1);
+
+        Teacher t2 = new Teacher("T002", "Yan Fei");
+        t2.addSubject("Introduction to Computer");
+        teachers.add(t2);
+
+        Teacher t3 = new Teacher("T003", "Zhao Haonan");
+        t3.addSubject("Object Oriented Programming Language");
+        teachers.add(t3);
+
+        Teacher t4 = new Teacher("T004", "XU YI");
+        t4.addSubject("Introduction to Chineese");
+        teachers.add(t4);
     }
 
-    Teacher t1 = new Teacher("T001", " Zhang Xie");
-    t1.
+    
     
 }
