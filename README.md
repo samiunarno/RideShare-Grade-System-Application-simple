@@ -2,7 +2,69 @@
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-
+/**
+ * [Short Title] - Brief one-line summary of what this code/file/module does.
+ *
+ * Detailed description:
+ * - Explain the purpose and high-level behavior.
+ * - Describe important design decisions, assumptions, and side effects.
+ * - Mention expected inputs, outputs, and external dependencies (APIs, environment variables, files, network).
+ *
+ * Usage:
+ * - Show typical usage snippet (how to call or import).
+ *   Example:
+ *     // language-specific example
+ *     const result = functionName(arg1, arg2);
+ *
+ * Parameters:
+ * - paramName (type): Short description of the parameter, valid values, units, and whether optional.
+ * - anotherParam (type, optional): Description and default value if omitted.
+ *
+ * Returns:
+ * - (type): Description of return value(s). If multiple values, enumerate them.
+ *
+ * Errors / Exceptions:
+ * - List possible exceptions or error codes and conditions under which they occur.
+ *   - ErrorType/Code: When it happens and recommended handling.
+ *
+ * Side Effects:
+ * - Describe mutations (file/DB writes, global state changes), network calls, or resource usage.
+ *
+ * Performance:
+ * - Time complexity, memory characteristics, and any important performance considerations.
+ * - Recommended limits (e.g., batch sizes, concurrency levels).
+ *
+ * Thread-safety / Concurrency:
+ * - Whether the code is safe to call from multiple threads or processes, and any synchronization requirements.
+ *
+ * Security:
+ * - Any security considerations: input validation, escaping, authentication/authorization, secrets handling.
+ *
+ * Configuration / Setup:
+ * - Required environment variables, config files, CLI flags, or build steps.
+ * - Version requirements for runtimes or external libraries.
+ * - Example setup:
+ *     export API_KEY=...
+ *     pip install -r requirements.txt
+ *
+ * Testing:
+ * - How to run unit/integration tests and any special test setup (mocks, fixtures).
+ * - Example test command.
+ *
+ * Examples:
+ * - Provide one or two concrete examples with expected outputs and edge-case demonstrations.
+ *
+ * Notes:
+ * - Known limitations, TODOs, and pointers to related modules or documentation.
+ *
+ * Licensing & Attribution:
+ * - Short note on license and third-party attributions if applicable.
+ *
+ * Contact / Maintainers:
+ * - Name(s) or team responsible and preferred contact method for issues.
+ *
+ * Replace bracketed placeholders with concrete values from the selected code.
+ */
 Documentation: Folder Structure
 
 Purpose:
