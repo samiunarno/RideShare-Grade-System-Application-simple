@@ -159,5 +159,25 @@ The **Grade System** is a console-based Java project that allows **students** an
 </div>
 
 ---
+<div align="center">
+
+## ⚙️ Installation & Setup
+
+</div>
+
+<div align="left">
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/samiunarno/RideShare-Grade-System-Application-simple.git
+   cd src
+   javac rideapp.java rideshare.java GradeSystem.java Student.java Teacher.java User.java
+   java rideapp
+   java GradeSystem
+
+
+
+
+
 
 <p align="center">🧡 Developed with Java ☕ by <b>Samiun Mahmud</b></p>
