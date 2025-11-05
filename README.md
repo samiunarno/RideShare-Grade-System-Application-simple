@@ -3,7 +3,6 @@
 
 <img src="https://img.shields.io/badge/Language-Java-red?logo=java&logoColor=white" />
 <img src="https://img.shields.io/badge/Type-Console%20Applications-blue" />
-<img src="https://img.shields.io/badge/License-MIT-green" />
 
 <p><i>Two interactive Java console-based projects demonstrating clean logic, modular design, and real-world programming concepts ☕</i></p>
 
