@@ -167,4 +167,4 @@ The **Grade System** is a console-based Java project that allows **students** an
 
 ---
 
-<p align="center">🧡 Developed with Java ☕ by <b>[Your Name]</b></p>
+<p align="center">🧡 Developed with Java ☕ by <b>Samiun Mahmud</b></p>
