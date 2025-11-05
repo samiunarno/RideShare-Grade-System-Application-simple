@@ -78,12 +78,6 @@ The **Ride Share App** simulates ride fare calculations based on distance and ti
 
 <div align="center">
 
-<h1>🎓 Grade System – Java Console Application</h1>
-
-<img src="https://img.shields.io/badge/Language-Java-orange?logo=java&logoColor=white" />
-<img src="https://img.shields.io/badge/Type-Console%20App-blue" />
-<img src="https://img.shields.io/badge/License-MIT-green" />
-
 <p><i>A simple academic management and grade conversion system built in Java ☕</i></p>
 
 <hr>
