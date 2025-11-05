@@ -1,5 +1,23 @@
 <div align="center">
 
+# 🚀 Java Console Applications
+
+<h2>🚗 Ride Share App & 🎓 Grade System</h2>
+
+<img src="https://img.shields.io/badge/Language-Java-red?logo=java&logoColor=white" />
+<img src="https://img.shields.io/badge/Type-Console%20Applications-blue" />
+<img src="https://img.shields.io/badge/License-MIT-green" />
+
+<p><i>Two interactive Java console-based projects demonstrating clean logic, modular design, and real-world programming concepts ☕</i></p>
+
+<hr>
+
+</div>
+
+---
+
+<div align="center">
+
 <h1>🚗 Ride Share App – Java Console Application</h1>
 
 <img src="https://img.shields.io/badge/Language-Java-red?logo=java&logoColor=white" />
@@ -14,7 +32,7 @@
 
 <div align="left">
 
-## 🏁 Overview
+## 🏁 Overview  
 The **Ride Share App** simulates ride fare calculations based on distance and time of day, supporting multiple payment methods and discount systems.
 
 </div>
@@ -54,13 +72,16 @@ The **Ride Share App** simulates ride fare calculations based on distance and ti
 
 <div align="center">
 
-## 🗂️ Project Structure
+## 🧱 Main Classes
 
-```bash
-📦 RideShareApp
- ┣ 📜 rideapp.java
- ┣ 📜 rideshare.java
- ┗ 📜 README.md
+| Class | Description |
+|--------|-------------|
+| `rideapp` | Controls input/output and menu navigation |
+| `rideshare` | Handles fare logic and payment processing |
+
+</div>
+
+---
 
 <div align="center">
 
@@ -78,15 +99,16 @@ The **Ride Share App** simulates ride fare calculations based on distance and ti
 
 <div align="left">
 
-## 🧠 Overview
-
+## 🧠 Overview  
 The **Grade System** is a console-based Java project that allows **students** and **teachers** to manage and view grades, calculate averages, and convert numerical grades to letter grades.
+
+</div>
 
 ---
 
-## ✨ Key Features
-
 <div align="center">
+
+## ✨ Key Features
 
 | 👨‍🎓 Student Features | 👩‍🏫 Teacher Features |
 |----------------------|-----------------------|
@@ -99,9 +121,9 @@ The **Grade System** is a console-based Java project that allows **students** an
 
 ---
 
-## 🧮 Grade Conversion Table
-
 <div align="center">
+
+## 🧮 Grade Conversion Table
 
 | Numeric Range | Letter Grade | Meaning |
 |----------------|---------------|----------|
@@ -114,13 +136,35 @@ The **Grade System** is a console-based Java project that allows **students** an
 
 ---
 
-## 🗂️ Project Structure
+<div align="center">
 
-```bash
-📦 GradeSystem
- ┣ 📜 GradeSystem.java
- ┣ 📜 Student.java
- ┣ 📜 Teacher.java
- ┣ 📜 User.java
- ┗ 📜 README.md
+## 🧱 Class Summary
 
+| Class | Description |
+|--------|-------------|
+| `User` | Handles login and authentication |
+| `Student` | Stores student info and grades |
+| `Teacher` | Manages subjects and grading |
+| `GradeSystem` | Controls menus and overall flow |
+
+</div>
+
+---
+
+<div align="center">
+
+## 🌟 Future Enhancements
+
+| Improvement | Description |
+|--------------|--------------|
+| 🗃 File or database storage | Save grades permanently |
+| 💻 GUI using JavaFX or Swing | Interactive interface |
+| 📤 Export grades to CSV/PDF | Easy sharing and backup |
+| 🧮 Statistical reports | Show class averages and rankings |
+| 🗺 Google Maps API (RideApp) | Real distance-based fare calculation |
+
+</div>
+
+---
+
+<p align="center">🧡 Developed with Java ☕ by <b>[Your Name]</b></p>
