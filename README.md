@@ -1,7 +1,4 @@
 <div align="center">
-
-# 🚀 Java Console Applications
-
 <h2>🚗 Ride Share App & 🎓 Grade System</h2>
 
 <img src="https://img.shields.io/badge/Language-Java-red?logo=java&logoColor=white" />
