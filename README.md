@@ -1,125 +1,68 @@
-🎓 Grade System – Java Console Application
+🧩 PROJECT 1: Grade System
+🎓 Overview
 
-A simple Java-based Grade Management System that allows students, teachers, and administrators to interact with grades through a console interface.
-The system supports login authentication, grade management, automatic letter grade conversion, and interactive grade checking.
+Grade System is a console-based Java application designed to help students and teachers manage academic grades efficiently.
+It features secure login, automatic letter grade conversion, average score computation, and flexible grade management menus for both students and teachers.
 
-🧩 Features
-👨‍🎓 Student Features
+✨ Features
+👨‍🎓 Student
 
-Login as Student
+Login and access own grades
 
-View all personal grades
+Calculate average marks
 
-Calculate and display average grade
-
-Automatically convert numerical grades to letter grades (A–F)
+View letter grade equivalents
 
 Interactive grade conversion checker
 
-👩‍🏫 Teacher Features
+👩‍🏫 Teacher
 
-Login as Teacher
+View all student grades
 
-View all students and their grades
+Add new grades to students
 
-Add or update student grades
+Display conversion rules
 
-Display grade conversion rules
+Grade validation and conversion checker
 
-Use the grade conversion checker
-
-🛠 Admin / System
-
-Preloaded demo data for students, teachers, and admin users
-
-Letter grade conversion system:
-
-70–100 : A  
-60–69  : B  
-50–59  : C  
-0–49   : F  
-Other  : Invalid Grade
-
-
-Input validation and safe scanner handling
-
-🧮 Grade Conversion Rules
-Numeric Range	Letter Grade
+🧮 Letter Grade Scale
+Range	Letter
 70–100	A
 60–69	B
 50–59	C
 0–49	F
+🗂 Project Structure
+GradeSystem/
+├── GradeSystem.java
+├── Student.java
+├── Teacher.java
+├── User.java
+└── README.md
 
-Example:
+🚀 How to Run
+Prerequisites
 
-95.0 -> A  
-67.5 -> B  
-55.0 -> C  
-42.0 -> F  
+Java JDK 8 or newer
 
-🗂️ Project Structure
-📦 GradeSystem
- ┣ 📜 GradeSystem.java
- ┣ 📜 User.java
- ┣ 📜 Student.java
- ┣ 📜 Teacher.java
- ┗ 📜 (Optional) README.md
+Terminal or IDE (IntelliJ, Eclipse, VS Code)
 
-🚀 Getting Started
-✅ Prerequisites
-
-Java JDK 8 or higher
-
-Any Java IDE (e.g., IntelliJ IDEA, Eclipse, VS Code with Java extensions)
-
-Basic command-line knowledge (for running from terminal)
-
-🖥️ Run in Command Line
-
-Clone this repository:
-
+Steps
+# 1. Clone the repository
 git clone https://github.com/yourusername/GradeSystem.git
 cd GradeSystem
 
-
-Compile the program:
-
+# 2. Compile
 javac GradeSystem.java User.java Student.java Teacher.java
 
-
-Run the program:
-
+# 3. Run
 java GradeSystem
 
-👤 Demo Login Credentials
+🔑 Demo Credentials
 Role	Username	Password
 Student	student1	12345
 Teacher	teacher1	11111
 Admin	admin	12345
-🧱 Classes Overview
-🧍‍♂️ User
-
-Base class for all users, handles login and role management.
-
-🎓 Student
-
-Stores ID, name, and grades
-
-Supports grade viewing and average calculation
-
-👩‍🏫 Teacher
-
-Stores ID, name, and subjects
-
-Can view or add student grades
-
-🧮 GradeSystem
-
-Controls system flow
-
-Handles login, menus, grade conversions, and validation
-
-📸 Example Output
+📈 Example Output
 === Welcome to the Grade System ===
 Username: student1
 Password: 12345
@@ -131,8 +74,124 @@ Student Dashboard
 3. View Grades with Letter Conversion
 4. Grade Conversion Checker
 5. Logout
-Choose an Option:
 
-📜 License
+🧱 Classes Summary
+Class	Description
+User	Handles login and user roles
+Student	Stores student details and grades
+Teacher	Manages subjects and grading
+GradeSystem	Main class controlling menus and logic
+💡 Future Enhancements
 
-This project is released under the MIT License – free to use, modify, and distribute.
+Add database or file storage
+
+GUI interface using JavaFX
+
+Admin dashboard with user management
+
+Export grades as CSV or PDF
+
+🪪 License
+
+This project is licensed under the MIT License
+.
+
+🚗 PROJECT 2: Ride Share App
+🏁 Overview
+
+Ride Share App is a console-based fare estimation and payment simulation system.
+It calculates fares based on distance and time of day, applies surcharges for long trips, and supports multiple payment methods including membership discounts.
+
+✨ Features
+
+Interactive fare calculation based on distance and hour
+
+Detects daytime vs nighttime rides
+
+Applies 10% high-mileage surcharge for rides > 20 km
+
+Supports multiple payment methods:
+
+💵 Cash
+
+💳 Card
+
+🟩 WeChat
+
+🟦 Alipay
+
+🪪 Membership (5% discount)
+
+Input validation for distance, time, and payment
+
+Option to book multiple trips in one session
+
+💰 Fare Logic
+Rule	Description
+Base fare	Calculated by rideshare.calculateFare()
+> 20 km	+10% surcharge
+Membership	5% discount
+Invalid distance/time	Handled gracefully with validation
+🗂 Project Structure
+RideApp/
+├── rideapp.java
+├── rideshare.java
+└── README.md
+
+🚀 How to Run
+Prerequisites
+
+Java JDK 8 or newer
+
+Terminal or any IDE
+
+Steps
+# 1. Clone the repository
+git clone https://github.com/yourusername/RideShareApp.git
+cd RideShareApp
+
+# 2. Compile
+javac rideapp.java rideshare.java
+
+# 3. Run
+java rideapp
+
+💻 Example Usage
+Welcome to Ride Share App
+--------------------------------
+Tip: enter distance in kilometers and hour in 24-hour format (0-23).
+
+--- New Trip Calculation ---
+Enter Distance in KM :
+25
+Enter Start Hour (0-23) :
+10
+High mileage surcharge applied (10%): +$3.00
+
+--- Trip Summary ---
+Distance: 25.00 km
+Hour: 10
+Time: Day Time
+Estimated Fare: $33.00
+
+Select Payment Method:
+1. Cash
+2. Card
+3. WeChat
+4. Alipay
+5. Membership
+
+🧱 Main Classes
+Class	Description
+rideapp	Handles user interaction, inputs, and menu flow
+rideshare	Contains fare calculation and payment processing logic
+💡 Future Improvements
+Add driver and user profiles
+Integrate real-time fare prediction (e.g., surge pricing)
+Add receipt export (PDF or CSV)
+Support Google Maps API for distance/time estimation
+Create a GUI (Swing/JavaFX) version
+
+🪪 License
+
+This project is licensed under the MIT License.
