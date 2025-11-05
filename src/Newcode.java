@@ -1,31 +1,26 @@
 public class Newcode {
-    public static void main(String[] args){
+    public static void main (String[] args) {
+        System.out.println("Student Grading System");
+        int score = 30;
 
-        System.out.println("Grading System ");
-
-        int a = 0;
-
-        if(a >= 70 && a <= 100){
+        if(score >= 70 && score <= 100) {
             System.out.println("A");
         }
-
-        else if (a>=60 && a<=69){
+        else if (score >= 60 && score <=69){
             System.out.println("B");
         }
-        else if (a>=50 && a<=59){
+        else if (score >= 50 && score <=59){
             System.out.println("C");
-
         }
-
-        else if (a>=0 && a<49){
+        else if (score >= 40 && score <=49){
+            System.out.println("D");
+        }
+        else if (score>=0 && score <=39){
             System.out.println("F");
         }
-        else {
-            System.out.println("Invalid");
+        else{
+            System.out.println("Invalid Score");
         }
-
-
-        
 
     }
     
